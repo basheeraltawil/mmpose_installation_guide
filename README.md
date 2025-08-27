@@ -195,6 +195,17 @@ Successfully installed numpy-2.0.2 opencv-python-headless-4.9.0.80
 pip install "numpy<2.0" "opencv-python-headless<4.10" --force-reinstall --no-deps
 pip install "opencv-python-headless<4.10"  # Reinstall to get other dependencies
 ```
+
+### Issue 6: Webcam Issue
+```
+with open(filepath, encoding=encoding) as f: FileNotFoundError: [Errno 2] No such file or directory:```
+Successfully installed numpy-2.0.2 opencv-python-headless-4.9.0.80
+**Solution: Install Both Together:**
+```bash
+cd ~/mmpose
+export PYTHONPATH=$(pwd):$PYTHONPATH
+
+```
 ## 🎯 Key Version Compatibility
 
 | Component | Version | Notes |
