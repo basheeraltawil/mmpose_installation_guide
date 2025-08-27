@@ -1,7 +1,9 @@
 # MMPose Installation Guide 🚀
 
 A comprehensive guide to install MMPose with CUDA 11.8 and PyTorch 2.1 in a clean virtual environment. This guide helps you avoid common dependency conflicts and version compatibility issues.
-Everey time we open PC, the cuda will directly take the updated version . however, we should activate my_env and run ./install_mmpose again .
+> **Important Note:**  
+Every time you start your PC, the system may use the default (possibly updated) CUDA version. To ensure compatibility with your MMPose setup, always activate your virtual environment (`my_env`) before running any MMPose commands.  
+If you encounter issues after a system update, reactivate `my_env` and re-run `./install_mmpose.sh` to restore the correct dependencies.
 ## 📋 Prerequisites
 
 - Ubuntu/Linux system with NVIDIA GPU
@@ -126,6 +128,44 @@ python demo/image_demo.py \
     --out-file vis_results_2.jpg \
     --draw-heatmap
 ```
+## 🤖 Integrate & Build MMPose in a ROS 2 Workspace
+
+You can use MMPose inside a ROS 2 workspace with a dedicated virtual environment to avoid dependency conflicts.
+
+### Step 4: Set Up MMPose in ROS 2 Workspace
+
+1. **Create a Colcon Workspace**
+    ```bash
+    mkdir -p ~/ros2_ws/src
+    cd ~/ros2_ws
+    ```
+
+2. **Activate Your Virtual Environment**
+    ```bash
+    source mmpose_rosvenv/bin/activate
+    # Prevent Colcon from building the venv
+    touch mmpose_rosvenv/COLCON_IGNORE
+    ```
+
+3. **Install MMPose Dependencies**
+    - Run your `install_mmpose.sh` script inside the activated environment:
+    ```bash
+    ./install_mmpose.sh
+    ```
+
+4. **Set Up ROS 2 Environment**
+    ```bash
+    # Source ROS 2 first, then your virtual environment
+    source /opt/ros/humble/setup.bash
+    source mmpose_rosvenv/bin/activate
+    ```
+
+5. **Build Your Workspace**
+    ```bash
+    colcon build --symlink-install
+    source install/local_setup.bash
+    ```
+
 
 ## 🚨 Common Issues & Solutions
 
