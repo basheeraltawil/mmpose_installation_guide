@@ -206,6 +206,24 @@ cd ~/mmpose
 export PYTHONPATH=$(pwd):$PYTHONPATH
 
 ```
+## 🎥 Webcam Demonstration
+
+Test pose estimation live using your webcam:
+
+**Hand Pose:**
+```bash
+python demo/inferencer_demo.py webcam --pose2d 'hand' --show
+```
+
+**Human Body Pose:**
+```bash
+python demo/inferencer_demo.py webcam --pose2d 'human'
+```
+
+**Whole Body Pose:**
+```bash
+python demo/inferencer_demo.py webcam --pose2d 'wholebody' --show
+```
 ## 🎯 Key Version Compatibility
 
 | Component | Version | Notes |
