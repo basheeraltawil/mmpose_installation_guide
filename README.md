@@ -174,7 +174,27 @@ python demo/image_demo.py [args...]  # ✅ Correct
 # instead of
 python demo/top_down_img_demo.py [args...]  # ❌ Old API
 ```
+### Issue 5: NumPy Version Conflicts
+```
+ValueError: numpy.dtype size changed, may indicate binary incompatibility
+```
 
+**Solution:**
+```bash
+pip install "numpy<2.0"
+pip install "opencv-python-headless<4.10" --force-reinstall
+```
+
+### Issue 6: OpenCV Pulls NumPy 2.x Back In
+```
+When installing OpenCV, it may automatically reinstall NumPy 2.x as a dependency, breaking compatibility.
+```
+Successfully installed numpy-2.0.2 opencv-python-headless-4.9.0.80
+**Solution: Install Both Together:**
+```bash
+pip install "numpy<2.0" "opencv-python-headless<4.10" --force-reinstall --no-deps
+pip install "opencv-python-headless<4.10"  # Reinstall to get other dependencies
+```
 ## 🎯 Key Version Compatibility
 
 | Component | Version | Notes |
