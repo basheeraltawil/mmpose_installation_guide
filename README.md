@@ -1,7 +1,7 @@
 # MMPose Installation Guide 🚀
 
 A comprehensive guide to install MMPose with CUDA 11.8 and PyTorch 2.1 in a clean virtual environment. This guide helps you avoid common dependency conflicts and version compatibility issues.
-
+Everey time we open PC, the cuda will directly take the updated version . however, we should activate my_env and run ./install_mmpose again .
 ## 📋 Prerequisites
 
 - Ubuntu/Linux system with NVIDIA GPU
