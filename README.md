@@ -4,6 +4,7 @@ A comprehensive guide to install MMPose with CUDA 11.8 and PyTorch 2.1 in a clea
 > **Important Note:**  
 Every time you start your PC, the system may use the default (possibly updated) CUDA version. To ensure compatibility with your MMPose setup, always activate your virtual environment (`my_env`) before running any MMPose commands.  
 If you encounter issues after a system update, reactivate `my_env` and re-run `./install_mmpose.sh` to restore the correct dependencies.
+> in ros2 workspace , when building , deactivate the virtual environment 
 ## 📋 Prerequisites
 
 - Ubuntu/Linux system with NVIDIA GPU
