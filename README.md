@@ -129,7 +129,7 @@ python demo/image_demo.py \
     --out-file vis_results_2.jpg \
     --draw-heatmap
 ```
-## 🤖 Integrate & Build MMPose in a ROS 2 Workspace
+## Integrate & Build MMPose in a ROS 2 Workspace
 
 You can use MMPose inside a ROS 2 workspace with a dedicated virtual environment to avoid dependency conflicts.
 
