@@ -311,8 +311,6 @@ conda env remove -n mmpose_env
 
 - [MMPose Official Documentation](https://mmpose.readthedocs.io/)
 - [OpenMMLab GitHub](https://github.com/open-mmlab/mmpose)
-- [Model Zoo](https://mmpose.readthedocs.io/en/latest/model_zoo.html)
-- [Config Files Guide](https://mmpose.readthedocs.io/en/latest/tutorials/0_config.html)
 
 ## 🎉 Success Checklist
 
