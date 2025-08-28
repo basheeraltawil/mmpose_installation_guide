@@ -307,7 +307,7 @@ rm -rf mmpose_env
 conda env remove -n mmpose_env
 ```
 
-##  Additional Resources
+##  Resources
 
 - [MMPose Official Documentation](https://mmpose.readthedocs.io/)
 - [OpenMMLab GitHub](https://github.com/open-mmlab/mmpose)
