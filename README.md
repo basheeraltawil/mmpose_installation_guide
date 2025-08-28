@@ -141,8 +141,9 @@ You can use MMPose inside a ROS 2 workspace with a dedicated virtual environment
     cd ~/ros2_ws
     ```
 
-2. **Activate Your Virtual Environment**
+2. **Create and Activate Your Virtual Environment**
     ```bash
+    python3 -m venv mmpose_rosvenv
     source mmpose_rosvenv/bin/activate
     # Prevent Colcon from building the venv
     touch mmpose_rosvenv/COLCON_IGNORE
