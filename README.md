@@ -312,7 +312,7 @@ conda env remove -n mmpose_env
 - [MMPose Official Documentation](https://mmpose.readthedocs.io/)
 - [OpenMMLab GitHub](https://github.com/open-mmlab/mmpose)
 
-## 🎉 Success Checklist
+##  Success Checklist
 
 - [ ] Virtual environment created and activated
 - [ ] PyTorch 2.1.0+cu118 installed
