@@ -324,6 +324,4 @@ conda env remove -n mmpose_env
 
 ---
 
-** Congratulations!** Your MMPose environment is now ready for pose estimation tasks!
 
-> **Tip:** Always use the same virtual environment for consistency and bookmark this guide for future reference.
