@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# MMPose Installation Script with UV Virtual Environment
 # This script sets up a clean environment for mmpose with CUDA 11.8 and PyTorch 2.1
 set -e  # Exit on any error
 # Step 1: Clean up any existing installations
