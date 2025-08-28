@@ -1,11 +1,11 @@
-# MMPose Installation Guide 🚀
+# MMPose Installation Guide 
 
 A comprehensive guide to install MMPose with CUDA 11.8 and PyTorch 2.1 in a clean virtual environment. This guide helps you avoid common dependency conflicts and version compatibility issues.
 > **Important Note:**  
 Every time you start your PC, the system may use the default (possibly updated) CUDA version. To ensure compatibility with your MMPose setup, always activate your virtual environment (`my_env`) before running any MMPose commands.  
 If you encounter issues after a system update, reactivate `my_env` and re-run `./install_mmpose.sh` to restore the correct dependencies.
 > in ros2 workspace , when building , deactivate the virtual environment 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Ubuntu/Linux system with NVIDIA GPU
 - CUDA 11.8 compatible GPU
@@ -29,7 +29,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 source $HOME/.cargo/env
 ```
 
-## 🔧 Step-by-Step Installation
+## Step-by-Step Installation
 
 ### Step 1: Create Virtual Environment
 
@@ -74,7 +74,7 @@ pip install -v -e .
 ```
 
 
-## 🧪 Verification & Testing
+##  Verification & Testing
 
 ### Step 1: Verify Installation
 
@@ -168,7 +168,7 @@ You can use MMPose inside a ROS 2 workspace with a dedicated virtual environment
     ```
 
 
-## 🚨 Common Issues & Solutions
+##  Common Issues & Solutions
 
 ### Issue 1: NumPy Version Conflicts
 ```
@@ -265,7 +265,7 @@ python demo/inferencer_demo.py webcam --pose2d 'human'
 ```bash
 python demo/inferencer_demo.py webcam --pose2d 'wholebody' --show
 ```
-## 🎯 Key Version Compatibility
+##  Key Version Compatibility
 
 | Component | Version | Notes |
 |-----------|---------|-------|
@@ -277,7 +277,7 @@ python demo/inferencer_demo.py webcam --pose2d 'wholebody' --show
 | NumPy | <2.0 | Avoid 2.x conflicts |
 | OpenCV | <4.10 | Avoid NumPy 2.x deps |
 
-## 🔄 Environment Management
+##  Environment Management
 
 ### Activate Environment (Future Sessions)
 ```bash
@@ -306,7 +306,7 @@ rm -rf mmpose_env
 conda env remove -n mmpose_env
 ```
 
-## 📚 Additional Resources
+##  Additional Resources
 
 - [MMPose Official Documentation](https://mmpose.readthedocs.io/)
 - [OpenMMLab GitHub](https://github.com/open-mmlab/mmpose)
@@ -325,6 +325,6 @@ conda env remove -n mmpose_env
 
 ---
 
-**🎊 Congratulations!** Your MMPose environment is now ready for pose estimation tasks!
+** Congratulations!** Your MMPose environment is now ready for pose estimation tasks!
 
 > **Tip:** Always use the same virtual environment for consistency and bookmark this guide for future reference.
