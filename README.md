@@ -179,7 +179,7 @@ ValueError: numpy.dtype size changed, may indicate binary incompatibility
 **Solution:**
 ```bash
 pip uninstall numpy -y
-pip install "numpy<2.0"
+pip install --force-reinstall "numpy<2"
 pip install "opencv-python-headless<4.10" --force-reinstall
 ```
 
